@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --coverage",
-    "dev-server": "nodemon index.js",
-    "server": "forever -c \"nodemon --exitcrash -L\" index.js"
+    "dev-server": "nodemon app.js",
+    "server": "forever -c \"nodemon --exitcrash -L\" app.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,7 @@
     "nodemon": "^1.19.1"
   },
   "dependencies": {
+    "body-parser": "^1.19.0",
     "celebrate": "^10.0.1",
     "connect-mongo": "^3.0.0",
     "dotenv": "^8.0.0",
