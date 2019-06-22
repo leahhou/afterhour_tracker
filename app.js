@@ -2,6 +2,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const exphbs = require("express-handlebars"); 
+const port=3000;
 
 //2. create an app from express
 const app = express();
@@ -14,24 +15,9 @@ app.set("view engine", "handlebars");
 app.use(express.urlencoded({ extended: false}));
 app.use(express.json);
 
-//5. link to route
-const contacts = [];
-
-// when user hit "/new_contact"(send a request to server), server will respond with contact form.
-app.get("/new_contact",(req,res)=>{
-    res.render("contact"); 
-
-app.post("/contacts", (req,res)=>{
-
-})
-
-app.get("/contacts", (req,res)=>{
-    
-})
-
-
-
+//5. import route from routes.js
+require("./routes/routes.js");
 
 
 //6. listen to port
-app.listen(3000, ()=> {console.log("Server is listening on port 3000")});
+app.listen(port, ()=>console.log(`Server is running on ${port}`));
