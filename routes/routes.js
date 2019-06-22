@@ -17,5 +17,5 @@ router.post("/contacts", createContact);
 router.get("/contacts", index);
 
 
-//5. export routes using CommonJS syntax.
+//5. export routes for app.js to use using CommonJS syntax.
 module.exports = router;
