@@ -10,7 +10,7 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 //3. instantiate a new instance/object from mongoose.Schema constructor;
 const ContactSchema = new Schema({
-    name: {
+    name: { // each key should be consistent with the name attribute of input in the html form
         type: String,
         require: true
     },

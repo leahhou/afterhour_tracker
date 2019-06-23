@@ -1,4 +1,4 @@
-
+//0. don't need to require mongoose in controller
 //1. import internal Models 
 const ContactModel = require("./../database/models/contact_model");
 //2. construct the controllers

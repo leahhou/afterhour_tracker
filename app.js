@@ -27,7 +27,7 @@ app.use(express.urlencoded({ extended: false}));
 app.use(express.json);
 
 //6. import route from routes.js
-require("./routes/routes.js");
+require("./routes/contacts_routes.js/index.js.js");
 
 
 //7. listen to port
